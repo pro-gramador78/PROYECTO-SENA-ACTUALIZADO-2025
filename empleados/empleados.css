@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+  color: #5b3a00;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+section {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 25px;
+  box-shadow: 0 12px 40px rgba(251, 176, 59, 0.5);
+  padding: 3rem 2.5rem;
+  width: 430px;
+  max-width: 90vw;
+}
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.8rem;
+  color: #d97904;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 6px #fceabb90;
+}
+
+/* Form box */
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Form */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* inputbox contenedor */
+.inputbox {
+  position: relative;
+  width: 100%;
+}
+/* inputbox: input estilizados */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 50px 12px 12px;
+  border-radius: 15px;
+  border: 2px solid #d97904;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #5b3a00;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.3s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #f8b500;
+  box-shadow: 0 0 8px #f8b500aa;
+}
+/* etiquetas flotantes */
+label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-family: 'Pacifico', cursive;
+  color: #d97904aa;
+  pointer-events: none;
+  font-size: 1rem;
+  transition: 0.3s ease all;
+  user-select:none;
+}
+/* Cuando el input tenga foco o valor valido */
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.85rem;
+  color: #d97904;
+  background: #fff;
+  padding: 0 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #f8b500aa;
+}
+
+/* icono ion */
+.inputbox ion-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #d97904cc;
+  user-select:none;
+}
+
+/* Botones */
+input[type="submit"],
+input[type="reset"] {
+  background-color: #d97904;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  padding: 12px 0;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(217, 121, 4, 0.6);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  user-select:none;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #b26603;
+  transform: scale(1.05);
+}
+/* El botón limpiar será más pequeño y con menos énfasis */
+input[type="reset"] {
+  margin-top: 10px;
+  background-color: #fceabb;
+  color: #5b3a00;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+input[type="reset"]:hover {
+  background-color: #d9c000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transform: scale(1.05);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('FONDO.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 530px;
+    height: 750px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: black;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: black;
+    display: flex;
+    justify-content: space-between;  
+}
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: black;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+#parrafo{
+    color: black;
+}
+
+.top-right-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.top-right-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.btn-editar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.btn-editar ion-icon {
+  font-size: 18px;
+}
+
+.btn-editar:hover {
+  background-color: #333;
+}
