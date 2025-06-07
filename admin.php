@@ -69,7 +69,7 @@
       </div>
     </div>
   </nav>
-
+  <P>DUVAN</P>
   <!-- Menú lateral -->
   <input type="checkbox" id="btn-menu" />
   <div class="container-menu">
