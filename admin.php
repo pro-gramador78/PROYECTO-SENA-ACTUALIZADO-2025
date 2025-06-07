@@ -15,6 +15,7 @@
   <nav>
     <div class="btn-menu">
       <label for="btn-menu">☰</label>
+      <img src="img/logo.jpeg" alt="Logo" class="logo-menu" />
     </div>
 
     <div class="texto-menu" role="banner" aria-label="Mensaje de bienvenida">
