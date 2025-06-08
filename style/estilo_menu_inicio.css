@@ -213,13 +213,3 @@ nav ul li a:hover {
   line-height: 50px;
 }
 
-.btn-menu {
-  display: flex;
-  align-items: center;
-}
-
-.logo-menu {
-  width: 40px; /* ajusta el tamaño a tu gusto */
-  height: auto;
-  margin-left: 10px; /* separación del botón */
-}

@@ -20,6 +20,7 @@
 
     <div class="texto-menu" role="banner" aria-label="Mensaje de bienvenida">
       Bienvenido Administrador, gestiona tu panel con eficiencia y control total
+      <img src="img/display.png" alt="">
     </div>
 
     <ul>
